@@ -1,6 +1,7 @@
 // Header.js
 import React from "react";
 import "./Header.css"; // Header コンポーネント専用のスタイルシート
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -9,7 +10,7 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <a href="/new-thread">スレッドを立てる</a>
+            <Link to="/thread/new">スレッドを立てる</Link>
           </li>
         </ul>
       </nav>
